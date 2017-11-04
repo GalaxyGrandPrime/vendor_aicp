@@ -81,5 +81,15 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := common/app/Retro.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+# Google's Wallpapers
+include $(CLEAR_VARS)
+LOCAL_MODULE := Wallpapers
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := common/app/Wallpapers.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)

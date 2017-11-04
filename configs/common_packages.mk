@@ -25,7 +25,7 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     LockClock \
     Trebuchet \
-    WallpaperPicker \
+    Wallpapers \
     WeatherProvider \
     Terminal \
     Recorder
@@ -33,7 +33,6 @@ PRODUCT_PACKAGES += \
 # AICP packages
 PRODUCT_PACKAGES += \
     AicpExtras \
-    BasicDreams \
     LatinImeDictionaryPack \
     LatinIME \
     librs_jni \
@@ -42,7 +41,6 @@ PRODUCT_PACKAGES += \
     procmem \
     procrank \
     Torch \
-    VisualizationWallpapers \
     Turbo
 
 # OmniRom packages
