@@ -122,8 +122,8 @@ include vendor/aicp/configs/twrp.mk
 endif
 
 # Copy Magisk zip
-#PRODUCT_COPY_FILES += \
-#    vendor/aicp/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
 
 # Include AICP LatinIME dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/dictionaries
