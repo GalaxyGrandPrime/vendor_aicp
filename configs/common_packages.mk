@@ -23,7 +23,7 @@ PRODUCT_PACKAGES += \
     AudioFX \
     CMFileManager \
     CMSettingsProvider \
-    Eleven \
+    Retro \
     Jelly \
     ExactCalculator \
     LockClock \
