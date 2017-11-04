@@ -9,9 +9,7 @@ PRODUCT_PACKAGES += \
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
-    libemoji \
-    LiveWallpapersPicker \
-    PhotoTable
+    libemoji
 
 # Include explicitly to work around GMS issues
 PRODUCT_PACKAGES += \
@@ -21,7 +19,6 @@ PRODUCT_PACKAGES += \
 # Custom CM packages
 PRODUCT_PACKAGES += \
     AudioFX \
-    CMFileManager \
     CMSettingsProvider \
     Retro \
     Jelly \
@@ -37,12 +34,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AicpExtras \
     BasicDreams \
-    Browser2 \
     LatinImeDictionaryPack \
     LatinIME \
     librs_jni \
-    LiveWallpapers \
-    MagicSmokeWallpapers \
     OmniSwitch \
     PhotoPhase \
     procmem \
@@ -51,19 +45,9 @@ PRODUCT_PACKAGES += \
     VisualizationWallpapers \
     Turbo
 
-# Conditionally build in su
-ifeq ($(WITH_SU),true)
-PRODUCT_PACKAGES += \
-    su
-endif
-
 # OmniRom packages
 PRODUCT_PACKAGES += \
     OmniStyle
-
-# Exchange support
-PRODUCT_PACKAGES += \
-    Exchange2
 
 # Extra tools in AICP
 PRODUCT_PACKAGES += \
@@ -131,7 +115,7 @@ PRODUCT_PACKAGES += \
     libffmpeg_omx \
     media_codecs_ffmpeg.xml
 
-#DU Utils Library
+# DU Utils Library
 PRODUCT_PACKAGES += \
     org.dirtyunicorns.utils
 
@@ -150,10 +134,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.substratum.verified=true
 
-# Magisk Manager
-#PRODUCT_PACKAGES += \
-#    MagiskManager
-
-#OmniJaws
+# OmniJaws
 PRODUCT_PACKAGES += \
     OmniJaws
