@@ -24,7 +24,7 @@ PRODUCT_PACKAGES += \
     Jelly \
     ExactCalculator \
     LockClock \
-    Trebuchet \
+    Lawnchair \
     Wallpapers \
     WeatherProvider \
     Terminal \
