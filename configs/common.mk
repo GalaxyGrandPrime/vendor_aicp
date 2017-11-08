@@ -121,16 +121,16 @@ ifeq ($(WITH_TWRP),true)
 include vendor/aicp/configs/twrp.mk
 endif
 
-# Copy Magisk zip
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
-
 # Include AICP LatinIME dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/dictionaries
 
 # AICP memo App
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/app/AICP-memo.apk:system/priv-app/AICP-memo/AICP-memo.apk
+
+# Copy Magisk zip
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
 
 # -include vendor/cyngn/product.mk
 
@@ -142,4 +142,3 @@ endif
 
 WITH_DEXPREOPT := true
 USE_DEX2OAT_DEBUG ?= false
-WITH_DEXPREOPT_BOOT_IMG_ONLY := true
